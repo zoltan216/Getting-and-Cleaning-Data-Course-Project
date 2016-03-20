@@ -136,5 +136,5 @@ Using aggreate function
 ```
 Ave_Data <- aggregate(. ~Subject + Activity, Extracted_data, mean)
 Ave_Data <- Ave_Data[order(Ave_Data$Subject,Ave_Data$Activity),]
-write.table(Ave_Data, file = "Tidy.txt", row.names = FALSE)
+write.table(Ave_Data, file = "Final_Table.txt", row.names = FALSE)
 ```
